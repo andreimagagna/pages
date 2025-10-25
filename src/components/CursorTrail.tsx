@@ -6,19 +6,31 @@ const CursorTrail = () => {
   const [isPointer, setIsPointer] = useState(false)
 
   useEffect(() => {
+    let rafId: number
+    
     const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
+      // Throttle usando requestAnimationFrame para melhor performance
+      if (rafId) return
       
-      const target = e.target as HTMLElement
-      setIsPointer(
-        window.getComputedStyle(target).cursor === 'pointer' ||
-        target.tagName === 'A' ||
-        target.tagName === 'BUTTON'
-      )
+      rafId = requestAnimationFrame(() => {
+        setMousePosition({ x: e.clientX, y: e.clientY })
+        
+        const target = e.target as HTMLElement
+        setIsPointer(
+          window.getComputedStyle(target).cursor === 'pointer' ||
+          target.tagName === 'A' ||
+          target.tagName === 'BUTTON'
+        )
+        
+        rafId = 0
+      })
     }
 
-    window.addEventListener('mousemove', updateMousePosition)
-    return () => window.removeEventListener('mousemove', updateMousePosition)
+    window.addEventListener('mousemove', updateMousePosition, { passive: true })
+    return () => {
+      window.removeEventListener('mousemove', updateMousePosition)
+      if (rafId) cancelAnimationFrame(rafId)
+    }
   }, [])
 
   return (

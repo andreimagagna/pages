@@ -51,15 +51,12 @@ function App() {
   }, [lang, i18n, navigate])
 
   useEffect(() => {
-    // Enhanced smooth scroll with easing
+    // Enhanced smooth scroll
     const style = document.createElement('style')
     style.textContent = `
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 2rem;
-      }
-      * {
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     `
     document.head.appendChild(style)

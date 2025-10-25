@@ -1,17 +1,18 @@
 import { motion } from 'framer-motion'
 
 const FloatingParticles = () => {
-  const particles = Array.from({ length: 12 }, (_, i) => ({
+  // Reduzido de 12 para 6 partículas para melhor performance
+  const particles = Array.from({ length: 6 }, (_, i) => ({
     id: i,
     size: Math.random() * 4 + 2,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    duration: Math.random() * 25 + 20,
-    delay: Math.random() * 8
+    duration: Math.random() * 30 + 25, // Animações mais lentas = menos cálculos
+    delay: Math.random() * 10
   }))
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
@@ -23,16 +24,14 @@ const FloatingParticles = () => {
             top: `${particle.y}%`,
           }}
           animate={{
-            y: [0, -100, 0],
-            x: [0, Math.random() * 50 - 25, 0],
-            opacity: [0, 0.8, 0],
-            scale: [0.8, 1.2, 0.8]
+            y: [0, -80, 0], // Movimento reduzido
+            opacity: [0, 0.6, 0], // Opacidade reduzida
           }}
           transition={{
             duration: particle.duration,
             delay: particle.delay,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "linear" // Linear é mais performático que easeInOut
           }}
         />
       ))}

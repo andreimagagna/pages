@@ -1,104 +1,111 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion'
+import { Check, ArrowRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import PulseBadge from './PulseBadge'
+import { handleCheckout, getPlanKey } from '../utils/stripe'
 
-interface Plan {
-  id: string;
-  name: string;
-  price: number;
-  oldPrice?: number;
-  currency: string;
-  description: string;
-  delivery: string;
-  features: string[];
-  highlight?: boolean;
-  badge?: string;
-  cta: string;
-}
-
-// Placeholder para dados – substitua pelos dados reais do seu projeto
-const plans: Plan[] = [
-  { 
-    id: 'price_1', 
-    name: 'Plano Básico', 
-    price: 10,
-    oldPrice: 20,
-    currency: 'BRL',
-    description: 'Descrição do plano',
-    delivery: 'Entrega imediata',
-    features: ['Feature 1', 'Feature 2'],
-    highlight: false,
-    badge: '',
-    cta: 'Comprar Agora'
-  },
-  // Adicione mais planos conforme necessário
-];
-
-const currencySymbol = 'R$';
-
-interface PricingProps {
-  // Adicione props se necessário
-}
-
-function Pricing({}: PricingProps) {
-  const { t } = useTranslation();
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleCheckout = async (priceId: string) => {
-    setIsLoading(true);
-    try {
-      const response = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId }),
-      });
-      
-      const data = await response.json();
-      
-      if (data.url) {
-        window.location.href = data.url;
-      }
-    } catch (error) {
-      console.error('Erro ao iniciar checkout:', error);
-    } finally {
-      setIsLoading(false);
+const Pricing = () => {
+  const { t, i18n } = useTranslation()
+  
+  const currencySymbol = i18n.language === 'pt' ? 'R$' : '$'
+  
+  const plans = [0, 1, 2].map(i => 
+    t(`pricing.plans.${i}`, { returnObjects: true }) as { 
+      name: string; 
+      price: string; 
+      oldPrice: string;
+      description: string;
+      delivery: string;
+      features: string[];
+      cta: string;
+      badge?: string;
+      highlight?: boolean;
     }
-  };
+  )
 
   return (
-    <div className="pricing-container">
-      {plans.map((plan: Plan) => (
-        <div key={plan.id} className={plan.highlight ? 'highlight' : ''}>
-          {plan.highlight && plan.badge && (
-            <span className="badge">{t(plan.badge)}</span>
-          )}
-          <h3>{t(plan.name)}</h3>
-          <p className="description">{t(plan.description)}</p>
-          <p className="delivery">{t(plan.delivery)}</p>
-          
-          <div className="price">
-            {plan.oldPrice && (
-              <span className="old-price">{currencySymbol}{plan.oldPrice}</span>
-            )}
-            <span className="current-price">{currencySymbol}{plan.price}</span>
-          </div>
+    <section id="planos" className="section bg-white">
+      <div className="container-tight">
+        <motion.div
+          className="text-center max-w-3xl mx-auto mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+        >
+          <h2 className="h2 mb-6">{t('pricing.title')}</h2>
+          <p className="p text-lg">
+            {t('pricing.subtitle')}
+          </p>
+        </motion.div>
 
-          <ul className="features">
-            {plan.features.map((feature: string, idx: number) => (
-              <li key={idx}>{t(feature)}</li>
-            ))}
-          </ul>
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {plans.map((plan, i) => (
+            <motion.div
+              key={i}
+              className={`card p-8 relative ${plan.highlight ? 'ring-2 ring-earth-600 shadow-elegant' : ''}`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: i * 0.1, duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            >
+              {plan.highlight && plan.badge && (
+                <div className="absolute -top-5 left-1/2 -translate-x-1/2 z-10">
+                  <PulseBadge color="earth">
+                    {plan.badge}
+                  </PulseBadge>
+                </div>
+              )}
+              
+              <div className="mb-6">
+                <h3 className="h3 mb-2">{plan.name}</h3>
+                <p className="text-base text-primary-600 mb-3">{plan.description}</p>
+                <div className="inline-block bg-earth-100 text-earth-800 px-3 py-1 rounded-full text-xs font-medium">
+                  {plan.delivery}
+                </div>
+              </div>
 
-          <button
-            onClick={() => handleCheckout(plan.id)}
-            disabled={isLoading}
-            className={`btn ${isLoading ? 'animate-pulse bg-gray-400' : plan.highlight ? 'bg-blue-600' : 'bg-blue-500'}`}
-          >
-            {isLoading ? t('Processando...') : t(plan.cta)}
-          </button>
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2 mb-1">
+                  <span className="text-primary-400 line-through text-lg">{currencySymbol} {plan.oldPrice}</span>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-primary-600">{currencySymbol}</span>
+                  <span className="text-5xl font-bold text-primary-900">{plan.price}</span>
+                </div>
+                <div className="text-sm text-primary-600 mt-1">{t('pricing.paymentLabel')}</div>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                {plan.features.map((feature, idx) => (
+                  <motion.li 
+                    key={idx} 
+                    className="flex gap-3 items-start"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 + idx * 0.05, duration: 0.4 }}
+                  >
+                    <Check className="w-5 h-5 text-earth-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-primary-700">{feature}</span>
+                  </motion.li>
+                ))}
+              </ul>
+
+              <button 
+                onClick={() => handleCheckout(getPlanKey(i18n.language, i))}
+                className={`btn w-full inline-flex items-center justify-center ${plan.highlight ? 'btn-cta' : 'btn-secondary'}`}
+              >
+                {plan.cta}
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </button>
+            </motion.div>
+          ))}
         </div>
-      ))}
-    </div>
-  );
+      </div>
+    </section>
+  )
 }
 
-export default Pricing;
+export default Pricing

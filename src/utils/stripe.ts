@@ -13,19 +13,19 @@ export const checkoutConfigs: Record<string, CheckoutConfig> = {
     priceId: 'price_1SJiVV2L5tedmwK4BmCJ7xpE',
     locale: 'en',
     successUrl: 'http://forms.futuree.org/essential',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/en#planos',
+    cancelUrl: 'https://pages.futuree.org/en#planos',
   },
   'en-pro': {
     priceId: 'price_1SJyWv2L5tedmwK4p73RZr5R',
     locale: 'en',
     successUrl: 'http://forms.futuree.org/pro',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/en#planos',
+    cancelUrl: 'https://pages.futuree.org/en#planos',
   },
   'en-premium': {
     priceId: 'price_1SJyXt2L5tedmwK4ZFZK83If',
     locale: 'en',
     successUrl: 'http://forms.futuree.org/premium',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/en#planos',
+    cancelUrl: 'https://pages.futuree.org/en#planos',
   },
   
   // Planos em Português
@@ -33,19 +33,19 @@ export const checkoutConfigs: Record<string, CheckoutConfig> = {
     priceId: 'price_1SJyYV2L5tedmwK4cIqYpuqE',
     locale: 'pt-BR',
     successUrl: 'http://forms.futuree.org/plano-essencial',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/pt#planos',
+    cancelUrl: 'https://pages.futuree.org/pt#planos',
   },
   'pt-pro': {
     priceId: 'price_1SJyZA2L5tedmwK43UOnRsjI',
     locale: 'pt-BR',
     successUrl: 'http://forms.futuree.org/plano-pro',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/pt#planos',
+    cancelUrl: 'https://pages.futuree.org/pt#planos',
   },
   'pt-premium': {
     priceId: 'price_1SJyZi2L5tedmwK4Yg7gVpDg',
     locale: 'pt-BR',
     successUrl: 'http://forms.futuree.org/plano-premium',
-    cancelUrl: 'https://page-kqdzajlc4-andreimagagnaaas-projects.vercel.app/pt#planos',
+    cancelUrl: 'https://pages.futuree.org/pt#planos',
   },
 }
 

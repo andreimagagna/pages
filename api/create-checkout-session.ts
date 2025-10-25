@@ -91,10 +91,21 @@ export default async function handler(
     // Valida se a chave secreta está configurada
     const stripeSecretKey = process.env.STRIPE_SECRET_KEY
     
+    // Debug log (remove em produção)
+    console.log('Stripe key prefix:', stripeSecretKey?.substring(0, 7))
+    console.log('All env keys:', Object.keys(process.env).filter(k => k.includes('STRIPE')))
+    
     if (!stripeSecretKey) {
       console.error('STRIPE_SECRET_KEY not configured')
       return res.status(500).json({ 
         error: 'Stripe not configured. Please contact support.' 
+      })
+    }
+    
+    if (!stripeSecretKey.startsWith('sk_')) {
+      console.error('Invalid STRIPE_SECRET_KEY - must start with sk_')
+      return res.status(500).json({ 
+        error: 'Stripe configuration error. Please contact support.' 
       })
     }
 

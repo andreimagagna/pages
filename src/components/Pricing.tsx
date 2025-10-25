@@ -40,7 +40,7 @@ interface PricingProps {
 }
 
 function Pricing({}: PricingProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleCheckout = async (priceId: string) => {
@@ -66,7 +66,7 @@ function Pricing({}: PricingProps) {
 
   return (
     <div className="pricing-container">
-      {plans.map((plan: Plan, i: number) => (
+      {plans.map((plan: Plan) => (
         <div key={plan.id} className={plan.highlight ? 'highlight' : ''}>
           {plan.highlight && plan.badge && (
             <span className="badge">{t(plan.badge)}</span>

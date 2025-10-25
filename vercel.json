@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/create-checkout-session.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "env": {
+    "STRIPE_SECRET_KEY": "@stripe-secret-key"
+  }
+}

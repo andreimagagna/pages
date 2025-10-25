@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Custom Scrollbar - Transparent lateral scroll */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+html, body, #root { 
+  height: 100%;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  color: #1c1917;
+  background: linear-gradient(to bottom, #fafaf9 0%, #f5f5f4 50%, #e7e5e4 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Smooth transitions globally */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Remove transition from animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .container-tight { 
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; 
+  }
+  
+  .section { 
+    @apply py-12 lg:py-16 xl:py-20; 
+  }
+
+  /* Elegant Earthy Typography */
+  .h1 { 
+    @apply font-[Sora] font-bold text-5xl sm:text-6xl lg:text-7xl 
+           text-primary-900
+           tracking-tight leading-[1.1]; 
+  }
+  
+  .h2 { 
+    @apply font-[Sora] font-semibold text-3xl sm:text-4xl lg:text-5xl 
+           text-primary-800 tracking-tight; 
+  }
+  
+  .h3 { 
+    @apply font-[Sora] font-medium text-xl sm:text-2xl 
+           text-primary-700; 
+  }
+  
+  .p { 
+    @apply font-sans text-base sm:text-lg 
+           text-primary-600 leading-relaxed; 
+  }
+
+  /* Elegant Earthy Buttons - Simplified */
+  .btn { 
+    @apply inline-flex items-center justify-center 
+           px-6 py-3 sm:px-8 sm:py-4 
+           rounded-xl font-semibold text-base
+           transition-all duration-300 ease-out
+           focus:outline-none focus:ring-2 focus:ring-offset-2; 
+  }
+  
+  .btn-cta { 
+    @apply btn bg-earth-700 
+           text-white shadow-lg hover:shadow-xl 
+           hover:bg-earth-800
+           focus:ring-earth-600; 
+  }
+  
+  .btn-secondary { 
+    @apply btn bg-white border-2 border-primary-300 
+           text-primary-900 hover:border-earth-600 hover:bg-primary-50
+           shadow-soft hover:shadow-medium; 
+  }
+  
+  .badge { 
+    @apply inline-flex items-center 
+           rounded-full px-4 py-1.5 
+           text-xs font-medium uppercase tracking-wider
+           bg-earth-100 
+           text-earth-800 border border-earth-200; 
+  }
+  
+  .card { 
+    @apply bg-white rounded-xl lg:rounded-2xl 
+           shadow-soft border border-primary-200
+           transition-all duration-500 ease-in-out; 
+  }
+  
+  .card-hover {
+    @apply card hover:shadow-elegant hover:-translate-y-2;
+  }
+}
+
+/* Earthy gradient utilities */
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-earth-600 to-earth-800;
+}
+
+.gradient-primary {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-primary-900;
+}
+
+/* Smooth animations */
+.fade-in { 
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) both; 
+}
+.slide-up { 
+  animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) both; 
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+@keyframes slideUp { 
+  from { transform: translateY(30px); opacity: 0; } 
+  to { transform: translateY(0); opacity: 1; } 
+}

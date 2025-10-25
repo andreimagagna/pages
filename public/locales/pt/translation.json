@@ -1,0 +1,281 @@
+{
+  "hero": {
+    "badge": "No ar em 5 dias",
+    "title": "Pare de Construir. Comece a Converter.",
+    "subtitle": "Sua Landing Page de <strong>Alta Conversão</strong>. No Ar em <strong>5 Dias</strong>.",
+    "cta": "Quero Minha Máquina de Vendas",
+    "browserUrl": "https://seu-negocio.com",
+    "speedBadge": "Carregou em 0.8s",
+    "conversionStat": "+10%",
+    "conversionLabel": "Conversão",
+    "loadingStat": "<1s",
+    "loadingLabel": "Carregamento"
+  },
+  "socialProof": {
+    "logos": ["Starbucks", "Netflix", "Natura", "BMW", "Samsung", "Mercedes", "Nubank"]
+  },
+  "problem": {
+    "title": "Sua oferta é incrível. <span>Sua página de vendas também deveria ser.</span>",
+    "cards": [
+      {
+        "title": "Página Lenta",
+        "description": "Cada segundo de carregamento afasta clientes prontos para comprar"
+      },
+      {
+        "title": "Design Amador",
+        "description": "Sua credibilidade evapora quando o design não inspira confiança"
+      },
+      {
+        "title": "Mensagem Fraca",
+        "description": "Sem clareza sobre o que você oferece, visitantes simplesmente saem"
+      }
+    ],
+    "conclusion": "Enquanto isso, <span>vendas escapam</span>. E seu negócio cresce mais devagar."
+  },
+  "process": {
+    "title": "Lançar sua landing page nunca foi tão simples",
+    "subtitle": "Nosso processo de 3 passos é o caminho mais rápido entre o seu objetivo de negócio e o seu próximo cliente.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Briefing Inteligente",
+        "description": "Um formulário online. Sua única tarefa. Você compartilha sua visão, nós capturamos a essência."
+      },
+      {
+        "number": "02",
+        "title": "Criação e Mágica",
+        "description": "Design e copywriting trabalhando juntos. Uma página focada em transformar visitantes em clientes."
+      },
+      {
+        "number": "03",
+        "title": "Lançamento em 5 Dias",
+        "description": "Página pronta, rápida e hospedada. Conecte seu domínio seguindo nosso guia simples. Pronto para converter."
+      }
+    ],
+    "formUrl": "https://forms.landing-page.com/briefing",
+    "formTitle": "Briefing",
+    "formBadge": "Simples e rápido",
+    "cta": "Eu Quero Esse Processo Descomplicado"
+  },
+  "solution": {
+    "title": "Um ativo de vendas<br />trabalhando para você 24/7",
+    "subtitle": "Cada elemento criado para transformar visitantes em clientes",
+    "benefits": [
+      {
+        "title": "Copywriting Estratégico",
+        "description": "Textos persuasivos com gatilhos mentais que transformam visitantes em leads qualificados prontos para comprar."
+      },
+      {
+        "title": "Design de Autoridade",
+        "description": "Interface profissional mobile-first que posiciona você como referência no mercado desde o primeiro scroll."
+      },
+      {
+        "title": "Performance de Elite",
+        "description": "Carregamento abaixo de 1 segundo. Páginas rápidas convertem 3x mais e ranqueiam melhor no Google."
+      },
+      {
+        "title": "Infraestrutura Completa",
+        "description": "Hospedagem premium, SSL, CDN global e backups automáticos. Tudo incluso por 1 ano sem custos extras."
+      },
+      {
+        "title": "Lançamento Rápido",
+        "description": "Sua página no ar em 5 dias úteis. Processo simplificado: briefing, design, aprovação e deploy."
+      },
+      {
+        "title": "Suporte Dedicado",
+        "description": "Acompanhamento pós-lançamento, ajustes de copy e otimizações de conversão inclusos no primeiro mês."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Por que escolher este caminho",
+    "subtitle": "Compare as opções e decida qual faz mais sentido para o seu negócio.",
+    "headers": ["", "Fazer sozinho", "Agência tradicional", "Com a gente"],
+    "rows": [
+      {
+        "category": "Tempo de entrega",
+        "diy": "Semanas ou meses",
+        "agency": "30-60 dias",
+        "us": "5 dias úteis"
+      },
+      {
+        "category": "Investimento",
+        "diy": "Seu tempo (precioso)",
+        "agency": "R$ 15.000 - R$ 45.000+",
+        "us": "A partir de R$ 1.497"
+      },
+      {
+        "category": "Performance",
+        "diy": "Lenta e pesada",
+        "agency": "Depende da sorte",
+        "us": "<1s de carregamento"
+      },
+      {
+        "category": "Copy persuasiva",
+        "diy": "Você inventa",
+        "agency": "Raramente incluso",
+        "us": "Incluído e otimizado"
+      },
+      {
+        "category": "Processo",
+        "diy": "Complexo e solitário",
+        "agency": "Interminável e cansativo",
+        "us": "1 Briefing online. Simples."
+      }
+    ],
+    "cta": "Escolher o caminho inteligente"
+  },
+  "pricing": {
+    "title": "Escolha o plano ideal para acelerar seu crescimento",
+    "subtitle": "Sem taxas escondidas, sem surpresas. Investimento claro com retorno rápido.",
+    "plans": [
+      {
+        "name": "Essencial",
+        "price": "1.497",
+        "oldPrice": "2.997",
+        "description": "Ideal para validar ofertas e capturar os primeiros leads.",
+        "delivery": "Entrega em 5 dias úteis",
+        "features": [
+          "Landing Page com até 5 seções",
+          "100% Responsivo",
+          "Formulários Automatizados",
+          "Hospedagem por 1 Ano",
+          "Design profissional e exclusivo"
+        ],
+        "cta": "Começar agora"
+      },
+      {
+        "name": "Pro",
+        "badge": "Escolha Inteligente",
+        "price": "2.997",
+        "oldPrice": "5.997",
+        "description": "A solução completa para gerar vendas e autoridade.",
+        "delivery": "Entrega em 5 dias úteis",
+        "features": [
+          "Tudo do Essencial, mais:",
+          "Landing Page com até 8 seções",
+          "Design Mais Customizado",
+          "Instalação de Pixels (Google/Meta)",
+          "Hospedagem por 2 Anos"
+        ],
+        "cta": "Quero vender mais",
+        "highlight": true
+      },
+      {
+        "name": "Premium",
+        "price": "4.497",
+        "oldPrice": "8.997",
+        "description": "Para projetos de alto impacto e integrações avançadas.",
+        "delivery": "Entrega em 7 dias úteis",
+        "features": [
+          "Tudo do Pro, mais:",
+          "Landing Page com até 10 seções",
+          "Integrações Complexas",
+          "Integração com E-mail Marketing",
+          "Hospedagem por 3 Anos"
+        ],
+        "cta": "Escalar agora"
+      }
+    ],
+    "paymentLabel": "Pagamento único"
+  },
+  "stats": {
+    "projects": {
+      "value": "120",
+      "suffix": "+",
+      "label": "Projetos Entregues",
+      "sublabel": "Com excelência comprovada"
+    },
+    "satisfaction": {
+      "value": "98",
+      "suffix": "%",
+      "label": "Taxa de Satisfação",
+      "sublabel": "Clientes que recomendam"
+    },
+    "delivery": {
+      "value": "5",
+      "suffix": " dias",
+      "label": "Tempo de Entrega",
+      "sublabel": "Seu site no ar rapidamente"
+    }
+  },
+  "guarantee": {
+    "title": "Sua Decisão 100% Livre de Risco",
+    "subtitle": "Nossa política de termos é clara e transparente. Você está protegido.",
+    "items": [
+      {
+        "title": "Garantia Incondicional de 7 Dias",
+        "subtitle": "Termo #1",
+        "description": "Nossa política é simples: Se você não estiver 100% satisfeito nos primeiros 7 dias, por qualquer motivo, reembolsamos 100% do seu investimento."
+      },
+      {
+        "title": "Garantia Contratual de Prazo",
+        "subtitle": "Termo #2",
+        "description": "A entrega em 5 dias úteis (ou no prazo do seu plano) é um termo contratual. Se falharmos com o prazo por nossa culpa, você tem direito ao reembolso total."
+      },
+      {
+        "title": "Pagamento Seguro e Auditado",
+        "subtitle": "Termo #3",
+        "description": "100% processado via Stripe (padrão-ouro em segurança), Apple Pay e Google Pay. Seus dados são criptografados e estão em conformidade com as leis."
+      }
+    ],
+    "watermark": "100%",
+    "watermarkSubtitle": "Garantido",
+    "paymentSecurityLabel": "Segurança de pagamento"
+  },
+  "guaranteeFAQ": {
+    "guaranteeTitle": "Nossa Garantia de Lançamento Perfeito",
+    "guaranteeText1": "Seu sucesso é o nosso.",
+    "guaranteeText2": "Nosso trabalho não termina até que você esteja 100% orgulhoso da sua nova landing page.",
+    "guaranteeText3": "O risco é todo nosso. Ou o seu dinheiro de volta.",
+    "faqTitle": "Perguntas Frequentes",
+    "faqs": [
+      {
+        "question": "E se eu não gostar do primeiro design?",
+        "answer": "Ótima pergunta. Nosso processo inclui uma fase de revisão para isso. Vamos trabalhar com você para ajustar tudo até que a página esteja perfeitamente alinhada com sua visão."
+      },
+      {
+        "question": "Como vocês conseguem entregar um resultado tão bom em 5 dias?",
+        "answer": "Não é sorte, é método. Nosso briefing estratégico captura toda a sua necessidade no início. Isso elimina o retrabalho e nos permite focar 100% na execução perfeita."
+      },
+      {
+        "question": "Preciso entender de tecnologia para meu domínio funcionar?",
+        "answer": "De forma alguma. Nós te damos o passo a passo exato. É mais fácil que postar uma foto no Instagram."
+      },
+      {
+        "question": "Eu serei o dono da página?",
+        "answer": "Com certeza. Ao final, o ativo digital mais importante do seu negócio é 100% seu, sem amarras ou mensalidades."
+      },
+      {
+        "question": "O que está incluso na hospedagem? E depois de 1 ano?",
+        "answer": "Sim, 1 ano de hospedagem de alta performance está incluso. Depois, para manter tudo no ar com a mesma qualidade, o custo é de apenas $3/mês, sem surpresas."
+      },
+      {
+        "question": "Minha página será realmente rápida?",
+        "answer": "Com certeza. Somos obcecados por velocidade. Entregamos sua página com performance máxima (Nota A no GTmetrix) para que você não perca nenhuma venda por lentidão."
+      },
+      {
+        "question": "A página é segura para meus clientes? (SSL)",
+        "answer": "Totalmente. Todas as páginas vêm com o Certificado SSL (o \"cadeado\" de segurança) ativado. Isso protege os dados e transmite profissionalismo e confiança."
+      },
+      {
+        "question": "Como recebo os contatos dos clientes?",
+        "answer": "De forma automática no seu e-mail. Nós configuramos o formulário para que, a cada novo lead, você seja notificado instantaneamente. Simples assim."
+      },
+      {
+        "question": "Posso vender produtos diretamente na página?",
+        "answer": "Sim. Nossos Planos Pro e Premium permitem integrar um checkout completo e seguro para você vender seus produtos ou cursos de forma automática e sem complicação."
+      },
+      {
+        "question": "E se eu precisar de ajuda após a entrega?",
+        "answer": "Nós não desaparecemos. Você terá acesso ao nosso suporte via e-mail para resolver qualquer dúvida e garantir que sua página continue funcionando perfeitamente."
+      }
+    ]
+  },
+  "finalCTA": {
+    "title": "Pare de perder clientes",
+    "text1": "Na próxima semana você estará no mesmo lugar.",
+    "text2": "Ou terá uma máquina de vendas capturando clientes enquanto você dorme.",
+    "cta": "Escolher meu plano"
+  }
+}

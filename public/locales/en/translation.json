@@ -1,0 +1,281 @@
+{
+  "hero": {
+    "badge": "Live in 5 Days",
+    "title": "Stop Building. Start Converting.",
+    "subtitle": "Your <strong>High-Converting</strong> Landing Page. Live in <strong>5 Days</strong>.",
+    "cta": "I Want My Sales Machine",
+    "browserUrl": "https://your-business.com",
+    "speedBadge": "Loaded in 0.8s",
+    "conversionStat": "+10%",
+    "conversionLabel": "Conversion",
+    "loadingStat": "<1s",
+    "loadingLabel": "Loading"
+  },
+  "socialProof": {
+    "logos": ["Starbucks", "Netflix", "Natura", "BMW", "Samsung", "Mercedes", "Nubank"]
+  },
+  "problem": {
+    "title": "Your offer is incredible. <span>Your sales page should be too.</span>",
+    "cards": [
+      {
+        "title": "Slow Page",
+        "description": "Every loading second drives away customers ready to buy"
+      },
+      {
+        "title": "Amateur Design",
+        "description": "Your credibility evaporates when design doesn't inspire confidence"
+      },
+      {
+        "title": "Weak Message",
+        "description": "Without clarity about what you offer, visitors simply leave"
+      }
+    ],
+    "conclusion": "Meanwhile, <span>sales slip away</span>. And your business grows slower."
+  },
+  "process": {
+    "title": "Launching your landing page has never been this simple",
+    "subtitle": "Our 3-step process is the fastest path between your business goal and your next customer.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Smart Briefing",
+        "description": "One online form. Your only task. You share your vision, we capture the essence."
+      },
+      {
+        "number": "02",
+        "title": "Creation & Magic",
+        "description": "Design and copywriting working together. A page focused on turning visitors into customers."
+      },
+      {
+        "number": "03",
+        "title": "Launch in 5 Days",
+        "description": "Page ready, fast and hosted. Connect your domain following our simple guide. Ready to convert."
+      }
+    ],
+    "formUrl": "https://forms.landing-page.com/briefing",
+    "formTitle": "Briefing",
+    "formBadge": "Simple and fast",
+    "cta": "I Want This Simplified Process"
+  },
+  "solution": {
+    "title": "A sales asset<br />working for you 24/7",
+    "subtitle": "Every element created to turn visitors into customers",
+    "benefits": [
+      {
+        "title": "Strategic Copywriting",
+        "description": "Persuasive texts with mental triggers that transform visitors into qualified leads ready to buy."
+      },
+      {
+        "title": "Authority Design",
+        "description": "Professional mobile-first interface that positions you as market reference from the first scroll."
+      },
+      {
+        "title": "Elite Performance",
+        "description": "Loading under 1 second. Fast pages convert 3x more and rank better on Google."
+      },
+      {
+        "title": "Complete Infrastructure",
+        "description": "Premium hosting, SSL, global CDN and automatic backups. Everything included for 1 year at no extra cost."
+      },
+      {
+        "title": "Fast Launch",
+        "description": "Your page live in 5 business days. Simplified process: briefing, design, approval and deploy."
+      },
+      {
+        "title": "Dedicated Support",
+        "description": "Post-launch follow-up, copy adjustments and conversion optimizations included in the first month."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Why choose this path",
+    "subtitle": "Compare the options and decide which makes more sense for your business.",
+    "headers": ["", "Do it yourself", "Traditional agency", "With us"],
+    "rows": [
+      {
+        "category": "Delivery time",
+        "diy": "Weeks or months",
+        "agency": "30-60 days",
+        "us": "5 business days"
+      },
+      {
+        "category": "Investment",
+        "diy": "Your time (precious)",
+        "agency": "$5,000 - $15,000+",
+        "us": "Starting at $497"
+      },
+      {
+        "category": "Performance",
+        "diy": "Slow and heavy",
+        "agency": "Depends on luck",
+        "us": "<1s loading"
+      },
+      {
+        "category": "Persuasive copy",
+        "diy": "You make it up",
+        "agency": "Rarely included",
+        "us": "Included and optimized"
+      },
+      {
+        "category": "Process",
+        "diy": "Complex and lonely",
+        "agency": "Endless and tiring",
+        "us": "1 Online Briefing. Simple."
+      }
+    ],
+    "cta": "Choose the smart path"
+  },
+  "pricing": {
+    "title": "Choose the ideal plan to accelerate your growth",
+    "subtitle": "No hidden fees, no surprises. Clear investment with fast returns.",
+    "plans": [
+      {
+        "name": "Essential",
+        "price": "497",
+        "oldPrice": "997",
+        "description": "Perfect for validating offers and capturing your first leads.",
+        "delivery": "Delivery in 5 business days",
+        "features": [
+          "Landing Page with up to 5 sections",
+          "100% Responsive",
+          "Automated Forms",
+          "Hosting for 1 Year",
+          "Professional and exclusive design"
+        ],
+        "cta": "Start now"
+      },
+      {
+        "name": "Pro",
+        "badge": "Smart Choice",
+        "price": "997",
+        "oldPrice": "1,997",
+        "description": "The complete solution to generate sales and authority.",
+        "delivery": "Delivery in 5 business days",
+        "features": [
+          "Everything in Essential, plus:",
+          "Landing Page with up to 8 sections",
+          "More Customized Design",
+          "Pixel Installation (Google/Meta)",
+          "Hosting for 2 Years"
+        ],
+        "cta": "I want to sell more",
+        "highlight": true
+      },
+      {
+        "name": "Premium",
+        "price": "1,497",
+        "oldPrice": "2,997",
+        "description": "For high-impact projects and advanced integrations.",
+        "delivery": "Delivery in 7 business days",
+        "features": [
+          "Everything in Pro, plus:",
+          "Landing Page with up to 10 sections",
+          "Complex Integrations",
+          "Email Marketing Integration",
+          "Hosting for 3 Years"
+        ],
+        "cta": "Scale now"
+      }
+    ],
+    "paymentLabel": "One-time payment"
+  },
+  "stats": {
+    "projects": {
+      "value": "120",
+      "suffix": "+",
+      "label": "Projects Delivered",
+      "sublabel": "With proven excellence"
+    },
+    "satisfaction": {
+      "value": "98",
+      "suffix": "%",
+      "label": "Satisfaction Rate",
+      "sublabel": "Clients who recommend"
+    },
+    "delivery": {
+      "value": "5",
+      "suffix": " days",
+      "label": "Delivery Time",
+      "sublabel": "Your site live quickly"
+    }
+  },
+  "guarantee": {
+    "title": "Your Decision 100% Risk-Free",
+    "subtitle": "Our terms policy is clear and transparent. You're protected.",
+    "items": [
+      {
+        "title": "Unconditional 7-Day Guarantee",
+        "subtitle": "Term #1",
+        "description": "Our policy is simple: If you're not 100% satisfied in the first 7 days, for any reason, we refund 100% of your investment."
+      },
+      {
+        "title": "Contractual Deadline Guarantee",
+        "subtitle": "Term #2",
+        "description": "Delivery in 5 business days (or your plan's deadline) is a contractual term. If we fail the deadline due to our fault, you're entitled to a full refund."
+      },
+      {
+        "title": "Secure and Audited Payment",
+        "subtitle": "Term #3",
+        "description": "100% processed via Stripe (the gold standard in security), Apple Pay and Google Pay. Your data is encrypted and complies with laws."
+      }
+    ],
+    "watermark": "100%",
+    "watermarkSubtitle": "Guaranteed",
+    "paymentSecurityLabel": "Payment security"
+  },
+  "guaranteeFAQ": {
+    "guaranteeTitle": "Our Perfect Launch Guarantee",
+    "guaranteeText1": "Your success is ours.",
+    "guaranteeText2": "Our work doesn't end until you're 100% proud of your new landing page.",
+    "guaranteeText3": "All the risk is ours. Or your money back.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What if I don't like the first design?",
+        "answer": "Great question. Our process includes a revision phase for that. We'll work with you to adjust everything until the page is perfectly aligned with your vision."
+      },
+      {
+        "question": "How do you deliver such good results in 5 days?",
+        "answer": "It's not luck, it's method. Our strategic briefing captures all your needs upfront. This eliminates rework and allows us to focus 100% on perfect execution."
+      },
+      {
+        "question": "Do I need to understand technology for my domain to work?",
+        "answer": "Not at all. We give you the exact step-by-step. It's easier than posting a photo on Instagram."
+      },
+      {
+        "question": "Will I own the page?",
+        "answer": "Absolutely. In the end, the most important digital asset of your business is 100% yours, with no strings or monthly fees."
+      },
+      {
+        "question": "What's included in hosting? And after 1 year?",
+        "answer": "Yes, 1 year of high-performance hosting is included. After that, to keep everything running with the same quality, the cost is just $3/month, no surprises."
+      },
+      {
+        "question": "Will my page really be fast?",
+        "answer": "Absolutely. We're obsessed with speed. We deliver your page with maximum performance (Grade A on GTmetrix) so you don't lose any sales due to slowness."
+      },
+      {
+        "question": "Is the page secure for my customers? (SSL)",
+        "answer": "Totally. All pages come with SSL Certificate (the security \"padlock\") activated. This protects data and conveys professionalism and trust."
+      },
+      {
+        "question": "How do I receive customer contacts?",
+        "answer": "Automatically to your email. We configure the form so that with each new lead, you're notified instantly. Simple as that."
+      },
+      {
+        "question": "Can I sell products directly on the page?",
+        "answer": "Yes. Our Pro and Premium Plans allow you to integrate a complete and secure checkout to sell your products or courses automatically and without hassle."
+      },
+      {
+        "question": "What if I need help after delivery?",
+        "answer": "We don't disappear. You'll have access to our support via email to resolve any questions and ensure your page continues working perfectly."
+      }
+    ]
+  },
+  "finalCTA": {
+    "title": "Stop losing customers",
+    "text1": "Next week you'll be in the same place.",
+    "text2": "Or you'll have a sales machine capturing customers while you sleep.",
+    "cta": "Choose my plan"
+  }
+}

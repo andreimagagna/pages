@@ -1,9 +1,11 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import App from './App'
 import './index.css'
 import './i18n'
+
+const Success = lazy(() => import('./pages/Success'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -19,6 +21,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Routes>
           {/* Redirect root to PT (default language) */}
           <Route path="/" element={<Navigate to="/pt" replace />} />
+          
+          {/* Success pages */}
+          <Route path="/pt/sucesso" element={<Success />} />
+          <Route path="/en/success" element={<Success />} />
           
           {/* Language routes */}
           <Route path="/:lang/*" element={<App />} />

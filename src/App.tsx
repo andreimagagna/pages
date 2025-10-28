@@ -2,6 +2,7 @@ import { useEffect, lazy, Suspense } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LazyMotion, domAnimation, motion, useScroll, useSpring } from 'framer-motion'
+import VercelAnalytics from './components/VercelAnalytics'
 
 // Critical components (above the fold)
 import Hero from './components/Hero'
@@ -77,7 +78,7 @@ function App() {
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-earth-600 via-earth-700 to-earth-800 transform origin-left z-50 shadow-lg"
         style={{ scaleX }}
       />
-      
+      <VercelAnalytics />
       <div className="min-h-screen">
         <a href="#planos" className="sr-only">Ir para os planos</a>
         
